@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/adminPag.css">
+    <script src="./js/adminPag.js"></script>
+    <title>Mantenimiento Administrativo</title>
+</head>
+<body onload="CargarTablaPersonas()">
+    <div class="containerNav">
+        <nav class="nav-main">
+          <ul class="nav-menu">
+              <li><img id="logito" src="./img/icono.png" alt=""></li>
+              <li>
+              <a href="./index.html">Inicio</a>
+            </li>
+            <li>
+              <a href="./adminPag2.html">Mantenimiento Reservas</a>
+            </li>
+            <li>
+                <a href="./login.html">Cerrar Sesion</a>
+              </li>
+          </ul>
+        </nav>
+      </div>
+      <h5>Mantenimiento Usuarios</h5>
+
+    <div class="containerP">
+
+        <div class="box">
+            <section class="cardP">
+                <div class="container">
+                  <table id="tblPersonas" class="tbl-header">
+                    <thead>
+                        <tr>
+                            <th>Cedula</th>
+                            <th>Nombre</th>
+                            <th>Apellidos</th>
+                            <th>Fecha de Nacimiento</th>
+                            <th>Email</th>
+                            <th>Rol</th>
+                            <th>Opciones</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody class="tbl-content">
+    
+                    </tbody>
+                </table>
+                
+                </div>
+                <div id="myModal" class="modal">
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <form class="Form_Tarjetas" id="frmRegPersona">
+    
+                      <h4>Formulario modificar Datos de Personas</h4>
+                      <label for="" class="letra"> Cedula: </label>
+                      <input class="controls" type="text" name="Cedula" id="txtCedMod" >
+    
+                      <label for="" class="letra"> Nombre: </label>
+                      <input class="controls" type="text" name="Nombre" id="txtNomMod" >
+    
+                      <label for="" class="letra"> Apellidos: </label>
+                      <input class="controls" type="text" name="Apellidos" id="txtApeMod" >
+    
+                      <label for="" class="letra"> Fecha de Nacimiento: </label>
+                      <input class="controls letra" type="date" name="FechaNac" id="txtFechaNacMod">
+    
+                      <label for="" class="letra"> Email: </label>
+                      <input class="controls letra" type="text" name="Telefono" id="txtTelefonoMod">
+    
+                      <label for="" class="letra"> Rol: </label>
+                      <select name="Rol" id="txtRolMod" class="controls">
+                        <option>Admin</option>
+                        <option>Empleado</option>
+                        <option>Cliente</option>
+                      </select>
+    
+                      <input type="button"  id="btnGuardar" onclick="EditarPersona(document.querySelector('#txtCedMod').value)"><br><br>
+                  </form>
+              </div>
+            </div>
+        </section>
+        </div>
+
+        <div class="box">
+            <section class="cardP2">
+                <div class="container2">
+                    <form class="Form_Tarjetas" id="frmRegPersona">
+    
+                        <h4>Formulario Registar Usuarios</h4>
+    
+                        <label for="" class="letra"> Cedula: </label><br>
+                        <input class="controls" type="text" name="Cedula" id="txtCed"><br>
+    
+                        <label for="" class="letra"> Nombre: </label><br>
+                        <input class="controls" type="text" name="Nombre" id="txtNom"><br>
+        
+                        <label for="" class="letra"> Apellidos: </label><br>
+                        <input class="controls" type="text" name="Apellidos" id="txtApe"><br>
+        
+                        <label for="" class="letra"> Fecha Nacimiento: </label><br>
+                        <input class="controls letra" type="date" name="txtFechNac" id="txtFechNac"><br>
+    
+                        <label for="" class="letra"> Email </label><br>
+                        <input class="controls letra" type="text" name="Telefono" id="txtTelefono"><br>
+    
+                        <label for="" class="letra"> Rol </label><br><br>
+                        <select name="Rol" id="txtRol" class="controlEncarg">
+                            <option>Admin</option>
+                            <option>Empleado</option>
+                            <option>Cliente</option>
+    
+                        </select><br>
+    
+                        <input class="btnM" type="button" value="Agregar" id="btnAgregar" onclick="AgregarPersona()"><br><br>
+        
+                    </form>
+                </div>
+              </section>
+        </div>
+    </div>
+   
+ 
+
+  </body>
+
+
+  <footer>
+    <div class="footer-main-div">
+        <div class="footer-social-icons">
+            <ul>
+                <li><a href="https://es-es.facebook.com/civitatis/" target="_blank"><img class="icon-img" src="./img/iconos/facebook.png" alt=""></i></a></li>
+                <li><a href="https://www.instagram.com/civitatis/?hl=es" target="_blank"><img class="icon-img" src="./img/iconos/instagram.png" alt=""></i></a></li>
+                <li><a href="#" target="_blank"><img class="icon-img" src="./img/iconos/whatsapp.png" alt=""></i></a></li>
+            </ul>
+        </div>
+        <p>| Costa Rica |</p>
+    <p id="email">Envianos un Email: CRTour@gmail.com</p>
+    <p>O puedes contactarnos al telefono: 2552 6810</p>
+    <p>Copyright 2021</p>
+</footer>
+</html>

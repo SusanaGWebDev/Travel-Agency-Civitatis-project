@@ -1,0 +1,301 @@
+
+*,
+*::before,
+*::after {
+   margin: 0;
+   padding: 0;
+}
+
+body {
+    background-color: #fdfcff;
+    background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%235ad96f' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+ }
+
+.containerP{
+    width: 99%;
+    display: grid;
+    grid-template-columns: 67% 33%;
+    gap: 15px;
+}
+
+.box{
+    height: 90vh;
+}
+
+h5{
+  text-align: center;
+  font-size: 40px;
+  color: #0a4870;
+  font-weight: 400;
+  padding: 10px 10px;
+}
+
+/*EMPIEZA MENU*/
+
+#logito{
+    width: 100px;
+    height: 40px;
+}
+
+a{
+    color: #ffffffff;
+    text-decoration: none;
+  }
+  
+  ul{
+    list-style: none;
+  }
+  
+  .containerNav{
+    width: 100%;
+    margin: auto;
+    background: rgb(46, 44, 44);
+  }
+  
+  .nav-main{
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 25px;
+    padding: 20px 0;
+  }
+  
+  .nav-brand{
+    width: 100px;
+  }
+  
+  .nav-main ul {
+    display: flex;
+  }
+  
+  .nav-main ul li{
+    padding: 10px;
+  }
+  
+  .nav-main ul li a{
+    font-size: 17px;
+    padding: 10px;
+  }
+  
+  .nav-main ul li a:hover{
+    border-bottom: 2px solid rgb(212, 214, 91);
+  }
+  
+  .nav-main ul.nav-menu{
+    flex: 1;
+    margin-left: 20px;
+  }
+  /*TERMINA MENU*/
+
+
+  
+.cardP {
+    height: 90vh;
+    padding: 10px 10px;
+   
+    .container {
+      margin-top: 3px;
+      display: flex;
+      flex-direction: column;
+      height: 93%;
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(0,0,0,0.18);
+      background: linear-gradient(rgba(39, 11, 11, 0.26), rgba(110, 168, 216, 0.404));
+      background-attachment: fixed;     
+      
+      h4{
+          margin: 10px 10px;
+          font-size: 35px;
+          margin-left: 60px;
+          color: #0a4870;
+          font-weight: 400;
+      }
+  
+    }
+   
+  }
+  
+  .controls{
+      margin-left: 60px;
+      width: 75%;
+      background-image: linear-gradient(to right top, #82908d, #7d9192, #799298, #79919e, #7c90a4);
+      padding: 10px;
+      border-radius: 4px;
+      margin-bottom: 16px;
+      border: 1px solid #000000;
+      *font-size: 18px;
+      background-image: linear-gradient(to right top, #82908d, #7d9192, #799298, #79919e, #7c90a4);
+    }
+  
+    .controlSelect{
+        width: 65px;
+        height: 35px;
+        border-radius: 4px;
+        margin-bottom: 16px;
+        background-image: linear-gradient(to right top, #82908d, #7d9192, #799298, #79919e, #7c90a4);
+      }
+    
+    .controls_form{
+      width: 40%;
+      align-self: center;
+      background-image: linear-gradient(to right top, #82908d, #7d9192, #799298, #79919e, #7c90a4);
+      padding: 10px;
+      border-radius: 4px;
+      margin-bottom: 16px;
+      border: 1px solid #000000;
+    }
+    
+    .controls::placeholder{
+    color: rgb(170, 222, 238);
+    }
+  
+ 
+    .letra{
+        font-family: arial;
+        font-size: 18px;
+        color: #0a4870;
+        font-weight: 400;
+        line-height: 35px;
+        margin: 0 55px;
+        
+    }
+  
+    .btnM{
+        margin-left: 60px;
+        width: 155px;
+        height: 35px;
+        border-radius: 4px;
+        margin-bottom: 16px;
+        
+    }
+  
+   .controlEncarg{
+      margin-left: 60px;
+      width: 77%;
+      background-image: linear-gradient(to right top, #82908d, #7d9192, #799298, #79919e, #7c90a4);
+      padding: 10px;
+      border-radius: 4px;
+      margin-bottom: 16px;
+      border: 1px solid #000000;
+      *font-size: 18px;
+      background-image: linear-gradient(to right top, #82908d, #7d9192, #799298, #79919e, #7c90a4);
+      color: rgb(0, 0, 0);
+   }
+    
+    
+   /* The Modal (background) */
+   .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    line-height: 20px;
+    background-color: #bce7e9d7;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%;
+  }
+  .modal-content h4{
+    color: #0a4870;
+    font-weight: 400;
+    text-align: center;
+    margin: 10px 10px;
+    font-size: 30px;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+  #btnGuardar{
+    background: url(../img/check.png);
+    width: 65px;
+    height: 65px;
+    border: none;
+    margin: 0 42%;
+  }
+
+
+    
+
+/* Footer */
+
+footer {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.footer-main-div{
+  width: 100%;
+  height: auto;
+  margin: auto;
+  background: black;
+  padding: 20px 0px;
+}
+
+.footer-social-icons{
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+.footer-social-icons ul{
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+
+.footer-social-icons ul li{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 0px 1px;
+  border-radius: 100%;
+  background: rgb(200, 211, 190);
+}
+
+.footer-social-icons ul li a{
+  color: #272727;
+  font-size: 25px;
+  display: block;
+}
+
+.footer-social-icons ul li a li {
+  line-height: 50px;
+}
+
+.footer-social-icons img{
+  height: 50px;
+  width: 50px;
+}
+/* Termina Footer */
+

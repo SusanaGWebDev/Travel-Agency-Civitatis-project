@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/adminPag2.css">
+    <script src="./js/Reserva.js"></script>
+    <title>Mantenimiento Administrativo</title>
+</head>
+<body onload="CargarTablaProductos()">
+
+    <div class="containerNav">
+        <nav class="nav-main">
+          <ul class="nav-menu">
+              <li><img id="logito" src="./img/icono.png" alt=""></li>
+              <li>
+              <a href="./index.html">Inicio</a>
+            </li>
+            <li>
+              <a href="./adminPag.html">Mantenimiento Usuarios</a>
+            </li>
+            <li>
+                <a href="./login.html">Cerrar Sesion</a>
+              </li>
+          </ul>
+        </nav>
+      </div>
+      <h5>Mantenimiento Reservas</h5>
+
+<!--SecondPart-->
+<div class="containerP">
+  <div class="box">
+    <section class="cardP">
+      <div class="container">
+        <table id="tblPersonas2" class="table table-secondary">
+          <thead>
+              <tr>
+                  <th>Nombre_Completo</th>
+                  <th>Email</th>
+                  <th>Cantidad_Personas</th>
+                  <th>Fecha_Reservacion</th>
+                  <th>Tour</th>
+                  <th>Opciones</th>
+                 
+                  
+              </tr>
+              
+          </thead>
+          <tbody>
+
+          </tbody>
+      </table>
+      </div>
+      <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <form class="Form_Tarjetas" id="frmRegPersona">
+
+            <h4>Formulario modificar Datos de Productos</h4>
+            <label for="" class="letra"> Nombre Completo: </label>
+            <input class="controls" type="text" name="Cedula" id="txtNomCMod" >
+
+            <label for="" class="letra"> Email: </label>
+            <input class="controls" type="text" name="Nombre" id="txtEmailMod" >
+
+            <label for="" class="letra"> Cantidad Personas: </label>
+            <input class="controls" type="text" name="Apellidos" id="txtCantidadPMod" >
+
+            <label for="" class="letra"> Fecha Reservacion: </label>
+            <input class="controls letra" type="date" name="Cantidad" id="txtFechaRMod">
+
+            <label for="" class="letra"> Tour </label><br>
+            <select name="Tipo" id="txtTourMod" class="controlEncarg">
+                <option>Senderismo Rio Celeste</option>
+                <option>Isla Tortuga</option>
+                <option>Catarata de la Paz</option>
+
+            </select><br>
+
+            <input type="button"  id="btnGuardar" onclick="EditarProducto(document.querySelector('#txtNomCMod').value)"><br><br>
+        </form>
+    </div>
+  </div>
+ </section>
+  </div>
+
+  <div class="box">
+    <section class="cardP">
+      <div class="container">
+          <form class="Form_Tarjetas" id="frmRegPersona">
+
+              <h4>Formulario Reservación</h4>
+
+              <label for="" class="letra"> Nombre: </label><br>
+              <input class="controls" type="text" name="Cedula" id="txtNomC"><br>
+
+              <label for="" class="letra"> Email </label><br>
+              <input class="controls" type="text" name="Nombre" id="txtEmail"><br>
+
+              <label for="" class="letra"> Cantidad Personas</label><br>
+              <input class="controls" type="text" name="Marca" id="txtCantidadP"><br>
+
+              <label for="" class="letra"> Fecha Reservacion </label><br>
+              <input class="controls letra" type="date" name="txtCantidad" id="txtFechaR"><br>
+
+              <label for="" class="letra"> Tour </label><br>
+              <select name="Tipo" id="txtTour" class="controlEncarg">
+                  <option>Senderismo Rio Celeste</option>
+                  <option>Isla Tortuga</option>
+                  <option>Catarata de la Paz</option>
+                  <option>Manuel Antonio</option>
+
+              </select><br>
+
+              <input class="btnM" type="button" value="Agregar" id="btnAgregar" onclick="AgregarProducto()"><br><br>
+
+          </form>
+      </div>
+    </section>
+  </div>
+</div>
+   
+ 
+
+  </body>
+
+
+  <footer>
+    <div class="footer-main-div">
+        <div class="footer-social-icons">
+            <ul>
+                <li><a href="https://es-es.facebook.com/civitatis/" target="_blank"><img class="icon-img" src="./img/iconos/facebook.png" alt=""></i></a></li>
+                <li><a href="https://www.instagram.com/civitatis/?hl=es" target="_blank"><img class="icon-img" src="./img/iconos/instagram.png" alt=""></i></a></li>
+                <li><a href="#" target="_blank"><img class="icon-img" src="./img/iconos/whatsapp.png" alt=""></i></a></li>
+            </ul>
+        </div>
+        <p>| Costa Rica |</p>
+    <p id="email">Envianos un Email: CRTour@gmail.com</p>
+    <p>O puedes contactarnos al telefono: 2552 6810</p>
+    <p>Copyright 2021</p>
+</footer>
+</html>
